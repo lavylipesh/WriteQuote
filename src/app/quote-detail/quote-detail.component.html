@@ -1,0 +1,9 @@
+<p>{{quote.description}}</p>
+<p>This quote was written in{{quote.quoteDate|dateCount}}days</p>
+
+<div>
+    <p>{{numberOfLikes}}</p>
+<button (click)='likeButtonClick' class="btn btn-success">Like</button>
+<button (click)='dislikeButtonClick' class="btn btn-danger">Dislike</button>
+</div>
+<button (click)= 'quoteDelete(true)' class="btn btn-primary">Delete Quote</button>

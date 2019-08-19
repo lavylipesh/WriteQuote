@@ -1,0 +1,34 @@
+
+<!--<div class="container" id="love">
+    <h1 id="quote">Write Quote</h1>
+    <hr>
+  
+    <div class="row">
+      <div class="col-md-6">
+        <div *ngFor='let quote of quote;let i = index'>
+            <div class="container">
+                
+                <div class="card" id="card">
+                  <div class="card-body">
+                      <h6 ><strong>{{quote.name}}</strong> <br>{{quote.quoteDate|date|uppercase}}<br></h6>
+                    <button (click)='toggleDetails(i)' class="btn btn-primary">Quote</button>
+                    
+                    <div *ngIf='quote.showDescription'>
+                        <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+                        
+
+                                     
+                      </div>
+                  </div>
+                </div>
+              </div>
+    
+
+        </div>
+      </div>
+      <div class="col-md-6">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+      </div>
+    </div>
+    
+  </div>

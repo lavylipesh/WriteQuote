@@ -1,0 +1,30 @@
+<div class="container">
+    <h4>Add  Quote</h4>
+    <form (ngSubmit)='submitQuote()' #quoteForm="ngForm">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Your name</label>
+            <input type="type" class="form-control" id="name" placeholder="Enter your name" [(ngModel)]="newQuote.submitted" name="submitted">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Date</label>
+            <input type="date" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Author</label>
+            <input type="type" class="form-control" id="author" placeholder=" Name of  author" [(ngModel)]="newQuote.author" name="author">
+        </div>
+        
+        <div class="md-form">
+            <label for="form7"> Quote </label>
+            <textarea id="bodyqoute" class="md-textarea form-control" rows="3"[(ngModel)]="newQuote.name" name="name"></textarea>
+        </div>
+
+        
+        
+        <div class="md-form">
+                <label for="form7">New Quote</label>
+                <textarea id="bodyqoute" class="md-textarea form-control" rows="4">" {{newQuote.name}} "</textarea>
+            </div><br>
+        <button class="btn btn-primary" type="submit">Add Quote</button>
+    </form>
+</div>
