@@ -1,30 +1,40 @@
+
+  
 <div class="container">
-    <h4>Add  Quote</h4>
+    <h4>Quote</h4>
     <form (ngSubmit)='submitQuote()' #quoteForm="ngForm">
         <div class="form-group">
             <label for="exampleFormControlInput1">Your name</label>
-            <input type="type" class="form-control" id="name" placeholder="Enter your name" [(ngModel)]="newQuote.submitted" name="submitted">
+            <input type="type" class="form-control" id="name" placeholder="Enter  name" [(ngModel)]="newQuote.name" name="name" #name='ngModel'required>
+            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                <p>Name required</p>
+            </div>
+        </div>
+        <div class="md-form">
+            <label for="form7"> Quote </label>
+            <textarea id="name" class="md-textarea form-control" rows="3"[(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
+                <div [hidden]="Quote.valid || Quote.pristine" class="alert alert-danger">
+                    <p>Quote is required</p>
+                </div>
+            </textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Author's name:</label>
+            <input type="type" class="form-control" id="author" placeholder="Enter name of the Author" [(ngModel)]="newQuote.author" name="author" #author='ngModel' required>
+            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+                <p>Author's name is required</p>
+            </div>
         </div>
         <div class="form-group">
             <label for="exampleFormControlInput1">Date</label>
             <input type="date" class="form-control" id="exampleFormControlInput1">
         </div>
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Author</label>
-            <input type="type" class="form-control" id="author" placeholder=" Name of  author" [(ngModel)]="newQuote.author" name="author">
-        </div>
-        
         <div class="md-form">
-            <label for="form7"> Quote </label>
-            <textarea id="bodyqoute" class="md-textarea form-control" rows="3"[(ngModel)]="newQuote.name" name="name"></textarea>
-        </div>
-
-        
-        
-        <div class="md-form">
-                <label for="form7">New Quote</label>
+                <label for="form7">Preview your Quote here:</label>
                 <textarea id="bodyqoute" class="md-textarea form-control" rows="4">" {{newQuote.name}} "</textarea>
             </div><br>
-        <button class="btn btn-primary" type="submit">Add Quote</button>
+        <button class="btn btn-success" type="submit">Add qoute</button>
     </form>
 </div>
+  

@@ -1,13 +1,13 @@
 #love{
-    background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2013/11/18/176518/8b71ae4cba365c1d34145a0142f5c3f0.jpg");
+    background-color:rgb(235, 183, 218);
     background-repeat: no-repeat;
     color:rgb(11, 42, 104);
     
 }
 #quote{
-    font-size: 95px;
+    font-size: 75px;
     text-align: center;
-    color: rgb(204, 101, 101);
+    color: rgb(15, 15, 15);
 }
 #card{
     background-color: transparent;

@@ -13,6 +13,7 @@
                       <h6 ><strong>{{quote.name}}</strong> <br>{{quote.quoteDate|date|uppercase}}<br></h6>
                     <button (click)='toggleDetails(i)' class="btn btn-primary">Quote</button>
                     
+                    
                     <div *ngIf='quote.showDescription'>
                         <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
                         
