@@ -8,7 +8,7 @@
         <div *ngFor='let quote of quote;let i = index'>
             <div class="container">
                 
-                <div class="card" id="card">
+                <div class="card" id="card" class="jumbotron">
                   <div class="card-body">
                       <h6 ><strong>{{quote.name}}</strong> <br>{{quote.quoteDate|date|uppercase}}<br></h6>
                     <button (click)='toggleDetails(i)' class="btn btn-primary">Quote</button>

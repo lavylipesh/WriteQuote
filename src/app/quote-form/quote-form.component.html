@@ -14,24 +14,24 @@
             <label for="form7"> Quote </label>
             <textarea id="name" class="md-textarea form-control" rows="3"[(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
                 <div [hidden]="Quote.valid || Quote.pristine" class="alert alert-danger">
-                    <p>Quote is required</p>
+                    <p>Quote required</p>
                 </div>
             </textarea>
         </div>
 
         <div class="form-group">
-            <label for="exampleFormControlInput1">Author's name:</label>
+            <label for="exampleFormControlInput1">Author</label>
             <input type="type" class="form-control" id="author" placeholder="Enter name of the Author" [(ngModel)]="newQuote.author" name="author" #author='ngModel' required>
             <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
-                <p>Author's name is required</p>
+                <p>Author required</p>
             </div>
         </div>
         <div class="form-group">
             <label for="exampleFormControlInput1">Date</label>
-            <input type="date" class="form-control" id="exampleFormControlInput1">
+            <input type="date" class="form-control" id="exampleFormControlInput1" [(ngModel)]='newQuote.quoteDate'>
         </div>
         <div class="md-form">
-                <label for="form7">Preview your Quote here:</label>
+                <label for="form7">Here is your quote</label>
                 <textarea id="bodyqoute" class="md-textarea form-control" rows="4">" {{newQuote.name}} "</textarea>
             </div><br>
         <button class="btn btn-success" type="submit">Add qoute</button>

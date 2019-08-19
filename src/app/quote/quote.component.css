@@ -1,7 +1,8 @@
 #love{
-    background-color:rgb(235, 183, 218);
+    background-color:rgb(188, 247, 242);
     background-repeat: no-repeat;
-    color:rgb(11, 42, 104);
+    color:rgb(7, 8, 8);
+    background-size: cover;
     
 }
 #quote{
@@ -10,5 +11,5 @@
     color: rgb(15, 15, 15);
 }
 #card{
-    background-color: transparent;
+    background-color:rgb(244, 223, 245);
 }

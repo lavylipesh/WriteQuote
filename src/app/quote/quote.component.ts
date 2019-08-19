@@ -11,11 +11,11 @@ export class QuoteComponent implements OnInit {
   
 
   public quote:Quote[] = [
-    new Quote(1, 'Christopher Khajira', 'One of the truest tests of integrity is its blunt refusal to be compromised',new Date (2019,2,3)),    
-    new Quote(3,'Lupita Nyongo','Your dreams are Valid',new Date(2019,1,12)),
-    new Quote(4,'Lavender Chemu','Good things go to those who HUSTLE',new Date(2019,0,18)),
-    new Quote(5,'Tatiana Chebet','Procrastination is the first step to never doing it',new Date(2019,2,14)),
-    new Quote(6,'Collins Muks','Find what you love and let it kill you',new Date(2019,3,14)),
+    new Quote(1, 'Christopher Khajira', 'Lovely Sarrah','One of the truest tests of integrity is its blunt refusal to be compromised',new Date (2019,2,3)),    
+    new Quote(3,'Omosh','Lupita Nyongo','Your dreams are valid',new Date(2019,1,12)),
+    new Quote(4,'Lavender Chemu','Meymey','Good things go to those who HUSTLE',new Date(2019,0,18)),
+    new Quote(5,'Tatiana Chebet','Brayo','Procrastination is the first step to never doing it',new Date(2019,2,14)),
+    new Quote(6,'Collins Muks','Kevoyyi','Find what you love and let it kill you',new Date(2019,3,14)),
 
     
     
