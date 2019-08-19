@@ -7,7 +7,7 @@ import{Quote} from '../quote';
   templateUrl: './quote.component.html',
   styleUrls: ['./quote.component.css']
 })
-/*export class QuoteComponent implements OnInit {
+export class QuoteComponent implements OnInit {
   
 
   public quote:Quote[] = [
@@ -22,7 +22,7 @@ import{Quote} from '../quote';
   ];
   
 
-  toggleDetails(index){
+  /*toggleDetails(index){
     this.quote[index].showDescription = !this.quote[index].showDescription;
   }
   deleteQuote(isComplete, index){
