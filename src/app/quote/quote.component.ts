@@ -33,14 +33,14 @@ export class QuoteComponent implements OnInit {
     }
 
   }
-  /*numberOfLikes:number;
+  numberOfLikes:number;
   likeButtonClick(){
     this.numberOfLikes++;
   }
   dislikeButtonClick(){
     this.numberOfLikes--;
   }
-  addNewQuote(quote){
+  /*addNewQuote(quote){
     let quoteLength=this.quote.length;
     quote.id=quoteLength+1;
     quote.quoteDate=new Date(quote.quoteDate)
