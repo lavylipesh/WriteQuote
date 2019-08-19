@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  # Description
  This is a quotes app that allows the user to read other people's quotes.Uvote or downvote them and also add their own quotes.
  # Live Page
- You can view my page at https://github.com/lavylipesh/WriteQuote/
+ You can view my page at https://lavylipesh.github.io/WriteQuote
 
 ## Development server
 
